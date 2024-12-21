@@ -26,14 +26,18 @@ $("#btn2").click(function (e) {
     }, 350)
 });
 
+
+let state = true;
 $("#btn3").click(function(e){
-    if () {
+    if (state) {
+        state = false;
         $("#box" == false).animate({
             height: 400,
             width: 400,
             opacity: 0.1
         }, 500)
     } else {
+        state = true;
         $("#box").animate({
             height: 150,
             width: 150,
